@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Unreleased
-----------
+1.1.0 Unreleased
+----------------
 
 - #2610885: Fix task to support retry.
   [JL 2019-03-04]
