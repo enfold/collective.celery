@@ -93,11 +93,11 @@ class AfterCommitTask(Task):
             site = api.portal.get()
             site = '/'.join(api.portal.get().getPhysicalPath())
         except api.exc.CannotGetPortalError:
-            site = '/'
+            site = kw.get('site_path', '/')
         try:
             user = api.user.get_current().getId()
         except api.exc.CannotGetPortalError:
-            user = 'admin'
+            user = kw.get('authorized_userid', 'admin')
         kw['site_path'] = site
         kw['authorized_userid'] = user
 

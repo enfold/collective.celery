@@ -7,6 +7,9 @@ Changelog
 - #2610885: Fix task to support retry.
   [JL 2019-03-04]
 
+- #2610885: On retry get the site path and user from kw args.
+  [JL 2019-03-05]
+
 
 1.0.6 (2016-08-01)
 ------------------
